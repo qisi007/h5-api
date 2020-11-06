@@ -1,8 +1,6 @@
 # h5通用api
 
 <br/>
-<br/>
-
 
 ## 使用方法
 
@@ -19,29 +17,202 @@ import { h5Api } from "h5-api";
 ```
 * ts项目需要声明类型
 
+<br/>
+
+
+
 ## 方法
-api | 名称 | 参数 | 返回值 | 介绍 | 
--- | --| -- | -- | -- |
-isFirstEntryEdge | 判断是否首次进入页面 | - | 有 |  首次进入返回`true`,否则返回`false`
-isPc | 判断设备是否为手机 | - | 有 | 如果是pc端返回`true`,否则返回`false`
-pageJump | 跳转页面 | url(跳转地址), blank(是否打开新页面) | 无 | -
-prodeceRandomString | 生成随机字符串 | length(随机数长度), isDate(是否添加时间戳) | 有 | 返回生成的字符串
-moneyToCapitalsFun | 金额小写转大写 | n(小写金额) | 有 | 返回生成的大写金额
-getCurrentUrl | 获取地址栏url | - | 无 | 返回url
 
-<br/>
-<br/>
+### 1. isFirstEntryEdge()
 
-## 例子
+<strong>介绍:</strong> 判断是否首次进入页面
 
-例如我们要生成一个随机字符串，用法如下:
+<strong>参数:</strong> 无
+
+<strong>返回值:</strong> 首次进入返回`true`,否则返回`false`
+
+<strong>例子:</strong>
 ```
-import { h5Api } from "h5-api";
-
-let str = h5Api.prodeceRandomString(10, true);
-
-console.log("随机字符串",str)
+    if ( isFirstEntryEdge() ) {
+        do something...
+    }
 ```
+
+### 2. isPc()
+
+<strong>介绍:</strong> 判断设备是否为电脑
+
+<strong>参数:</strong> 无
+
+<strong>返回值:</strong> 如果是pc端返回`true`,否则返回`false`
+
+<strong>例子:</strong>
+
+```
+    if ( isPc() ) {
+        do something...
+    }
+```
+
+### 3. pageJump( url, blank )
+
+<strong>介绍:</strong> 跳转页面
+
+<strong>参数:</strong> 
+  - url 跳转的地址  string类型(开头必须包含`http`或者`https`) 
+  - blank 是否在新页面打开 boolean类型  默认值: true
+
+<strong>返回值:</strong> 无
+
+<strong>例子:</strong>
+
+```
+    pageJump("https://www.liuguisheng.vip", true);
+```
+
+### 4. prodeceRandomString( length, isDate )
+
+<strong>介绍: </strong>生成一个随机字符串
+
+<strong>参数: </strong>
+ - length 随机数长度 number类型
+ - isDate 是否添加时间戳 boolean类型  默认值: false
+
+<strong>返回值: </strong>生成的字符串
+
+<strong>例子:</strong>
+
+```
+    let str =  prodeceRandomString( 10, true );
+    
+    console.log(str);
+```
+
+### 5. moneyToCapitalsFun( n )
+
+<strong>介绍: </strong>判断设备是否为电脑
+
+<strong>参数:</strong> 
+ - n 小写金额 number类型
+
+<strong>返回值:</strong> 返回生成的大写金额
+
+<strong>例子:</strong>
+
+```
+    let capitalizeMoney =  prodeceRandomString( 10, true );
+    
+    console.log(capitalizeMoney);
+```
+
+### 6. getCurrentUrl ()
+
+<strong>介绍: </strong>获取地址栏url
+
+<strong>参数:</strong> 无
+
+<strong>返回值:</strong> 地址栏的url
+
+<strong>例子:</strong>
+
+```
+    let url = getCurrentUrl();
+    
+    console.log(url);
+```
+
+### 7. deepCopy ( value )
+
+<strong>介绍: </strong>深拷贝方法
+
+<strong>参数:</strong> 
+ - value 需要拷贝的值 任意类型
+
+<strong>返回值:</strong> 深拷贝后的值
+
+<strong>例子:</strong>
+
+```
+    let obj = {
+        name: "liu",
+        home: "https://www.liuguisheng.vip"
+    }
+    let result = deepCopy(obj);
+    
+    console.log(obj === result);
+```
+
+### 8. emptyCheck 
+
+<strong>介绍: </strong>校验一个对象是否有空值
+
+<strong>参数:</strong> 每个方法的传参有所区别
+
+<strong>内置方法:</strong>
+ - emptyCheck.checkObject( obj, unInclude ) 校验对象, obj为需要校验的对象,unInclude为不需要校验的key
+ - emptyCheck.checkNumber ( num ) 校验数字
+ - emptyCheck.checkString ( str ) 校验字符串
+ - emptyCheck.checkArray ( arr ) 校验数组
+
+<strong>返回值:</strong> 如果有空值返回`true`, 否则返回`false`
+
+<strong>例子:</strong>
+
+```
+    let obj = {
+        name: "liu",
+        home: "https://www.liuguisheng.vip",
+        info: {
+            age: 27,
+            idCard: '',
+            girlFriend: ''
+        }
+    }
+
+    let unInclude = ['girlFriend'];
+
+    let check = new emptyCheck();
+
+    let result = check.checkObject(obj, unInclude);
+    
+    console.log(result);
+```
+
+### 9. charToPx ( length, fontSize )
+
+<strong>介绍: </strong>字符转像素
+
+<strong>参数:</strong> 
+ - length 字符长度 number类型
+ - fontSize 字体大小 number类型
+
+<strong>返回值:</strong> 生成的像素值
+
+<strong>例子:</strong>
+
+```
+    let result = charToPx ( 30, 14 );
+    console.log( result );
+```
+
+### 10. cmToPx ( cm )
+
+<strong>介绍: </strong>厘米转像素
+
+<strong>参数:</strong> 
+ - cm 厘米 number类型
+
+<strong>返回值:</strong> 生成的像素值
+
+<strong>例子:</strong>
+
+```
+    let result = cmToPx ( 30 );
+    console.log( result );
+```
+
+
+
 
 <br/>
 <br/>
