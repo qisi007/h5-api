@@ -3,13 +3,15 @@ import { isPcWebFun } from "./src/is_pc_web";
 import { pageJumpFun } from "./src/page_jump";
 import { produceNumberFun } from "./src/produce_number";
 import { moneyToCapitalsFun} from "./src/money_to_capitals";
+import { getCurrentUrlFun } from "./src/get_current_url";
 
 export const h5Api = {
     isFirstEntryEdge: isFirstEntryFun,
     isPc: isPcWebFun,
     pageJump: pageJumpFun,
     prodeceRandomString: produceNumberFun,
-    moneyToCapitals: moneyToCapitalsFun
+    moneyToCapitals: moneyToCapitalsFun,
+    getCurrentUrl: getCurrentUrlFun
 }
 
 
