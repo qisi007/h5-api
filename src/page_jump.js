@@ -1,4 +1,4 @@
-export function pageJump ( url, target ) {
+export function pageJumpFun ( url, target=true ) {
     if ( target ) {
         window.open(url, "_blank");
     } else {
