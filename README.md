@@ -49,3 +49,5 @@ console.log("随机字符串",str)
 ## 开源协议
 
 [MIT License](https://github.com/qisi007/h5-api/blob/main/LICENSE)
+
+<br/>
