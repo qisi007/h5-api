@@ -1,4 +1,4 @@
-export const isFirstEntry = () => {
+export const isFirstEntryFun = () => {
     if (window.name == "") {
         window.name = "isRefresh";
         return true

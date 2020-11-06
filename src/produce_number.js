@@ -1,4 +1,4 @@
-export function produceNumber (length, isDate = false) {
+export const produceNumberFun = (length, isDate = false) => {
     length = length || 10;
     let chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz23456789';
     // 字符长度(maxLength)和随机数(randomNumber)定义
