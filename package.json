@@ -1,0 +1,12 @@
+{
+  "name": "h5-api",
+  "version": "1.0.7",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "org": "npm config set registry https://registry.npmjs.org/"
+  },
+  "author": "liuguisheng.vip",
+  "license": "ISC"
+}
