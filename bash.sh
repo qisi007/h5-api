@@ -4,8 +4,8 @@ git commit -m "add: api"
 
 git pull origin main
 
-# npm login
+npm login
 
-# npm publish
+npm publish
 
-git push orign main
+git push origin main
