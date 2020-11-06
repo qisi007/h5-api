@@ -6,8 +6,8 @@ git pull origin main
 
 npm config set registry https://registry.npmjs.org/
 
-npm login
+# npm login
 
-npm publish
+# npm publish
 
 git push origin main

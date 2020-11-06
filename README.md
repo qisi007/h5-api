@@ -21,3 +21,7 @@ isPc | 判断设备是否为手机 | - | 有 | 如果是pc端返回`true`,否则
 pageJump | 跳转页面 | url(跳转地址), blank(是否打开新页面) | 无 | -
 prodeceRandomString | 生成随机字符串 | length(随机数长度), isDate(是否添加时间戳) | 有 | 返回生成的字符串
 moneyToCapitalsFun | 金额小写转大写 | n(小写金额) | 有 | 返回生成的大写金额
+
+## 开源协议
+
+[MIT License](https://github.com/qisi007/h5-api/blob/main/LICENSE)
