@@ -7,6 +7,10 @@ import { getCurrentUrlFun } from "./src/get_current_url";
 import { deepCopyFun } from "./src/deep_copy";
 import { Check } from "./src/empty_check";
 import { charToPxFun, cmToPxFun } from "./src/format_util";
+import { arrayIntersectionFun, arraySubtractionFun} from "./src/array_utils";
+import { keyNameMappingFun } from "./src/key_name_mapping";
+import { telMosaicFun, idCardMosaicFun } from "./src/mosaic_utils";
+
 
 export const h5Api = {
     isFirstEntryEdge: isFirstEntryFun,
@@ -18,7 +22,12 @@ export const h5Api = {
     deepCopy: deepCopyFun,
     emptyCheck: Check,
     charToPx: charToPxFun,
-    cmToPx: cmToPxFun
+    cmToPx: cmToPxFun,
+    arrayIntersection: arrayIntersectionFun,
+    arraySubtraction: arraySubtractionFun,
+    keyNameMapping: keyNameMappingFun,
+    telMosaic: telMosaicFun,
+    idCardMosaic: idCardMosaicFun
 }
 
 

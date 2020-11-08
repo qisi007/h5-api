@@ -211,6 +211,105 @@ import { h5Api } from "h5-api";
     console.log( result );
 ```
 
+### 11. arrayIntersection ( arr1, arr2 )
+
+<strong>介绍: </strong>两个数组取交集
+
+<strong>参数:</strong> 
+ - arr1 数组1 any[] 类型
+ - arr2 数组1 any[] 类型
+
+<strong>返回值:</strong> 生成的新数组
+
+<strong>例子:</strong>
+
+```
+    let arr1 = [1,2,3,4];
+    let arr2 = [3,4,5,6];
+    let result = arrayIntersectionFun ( arr1, arr2 );
+    console.log( result );
+```
+
+### 12. arraySubtraction ( arr1, arr2 )
+
+<strong>介绍: </strong>两个数组取交集
+
+<strong>参数:</strong> 
+ - arr1 数组1 any[] 类型
+ - arr2 数组1 any[] 类型
+
+<strong>返回值:</strong> 生成的新数组
+
+<strong>例子:</strong>
+
+```
+    let arr1 = [1,2,3,4];
+    let arr2 = [3,4,5,6];
+    let result = arraySubtractionFun ( arr1, arr2 );
+    console.log( result );
+```
+
+### 13. keyNameMapping ( obj, config )
+
+<strong>介绍: </strong>对象键名映射(只支持简单对象)
+
+<strong>参数:</strong> 
+ - obj 原对象 object类型
+ - config 映射配置 object类型
+
+<strong>返回值:</strong> 生成的新对象
+
+<strong>例子:</strong>
+
+```
+    let obj = {
+        name: "liu",
+        home: "https://www.liuguisheng.vip",
+        age: 27
+    };
+    let config = {
+        name: "id",
+        home: "index",
+        info: "message"
+    }
+
+    let result = keyNameMapping ( obj, config );
+    console.log( result );
+```
+
+### 14. telMosaic ( tel )
+
+<strong>介绍: </strong>手机号打码
+
+<strong>参数:</strong> 
+ - tel 手机号码 number|字符串类型
+
+<strong>返回值:</strong> 生成的新手机号
+
+<strong>例子:</strong>
+
+```
+    let result = telMosaic ( 17698443243 );
+    console.log( result );
+```
+
+### 15. idCardMosaic ( idCard )
+
+<strong>介绍: </strong>手机号打码
+
+<strong>参数:</strong> 
+ - idCard 身份证号码 number|字符串类型
+
+<strong>返回值:</strong> 生成的身份证
+
+<strong>例子:</strong>
+
+```
+    let result = idCardMosaic ( 130282199508145154 );
+    console.log( result );
+```
+
+
 
 
 
@@ -222,3 +321,11 @@ import { h5Api } from "h5-api";
 [MIT License](https://github.com/qisi007/h5-api/blob/main/LICENSE)
 
 <br/>
+
+## 源码地址
+
+[地址](https://github.com/qisi007/h5-api)
+
+## 博客地址
+
+[博客](https://www.liuguisheng.vip)
