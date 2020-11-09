@@ -88,7 +88,7 @@ import { h5Api } from "h5-api";
     console.log(str);
 ```
 
-### 5. moneyToCapitalsFun( n )
+### 5. moneyToCapitals( n )
 
 <strong>介绍: </strong>判断设备是否为电脑
 
