@@ -90,7 +90,7 @@ import { h5Api } from "h5-api";
 
 ### 5. moneyToCapitals( n )
 
-<strong>介绍: </strong>判断设备是否为电脑
+<strong>介绍: </strong>金额小写转大写
 
 <strong>参数:</strong> 
  - n 小写金额 number类型
