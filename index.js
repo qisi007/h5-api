@@ -10,6 +10,7 @@ import { charToPxFun, cmToPxFun } from "./src/format_util";
 import { arrayIntersectionFun, arraySubtractionFun} from "./src/array_utils";
 import { keyNameMappingFun } from "./src/key_name_mapping";
 import { telMosaicFun, idCardMosaicFun } from "./src/mosaic_utils";
+import {judgeValueTypeFun } from "./src/judge_value_type";
 
 
 export const h5Api = {
@@ -27,7 +28,8 @@ export const h5Api = {
     arraySubtraction: arraySubtractionFun,
     keyNameMapping: keyNameMappingFun,
     telMosaic: telMosaicFun,
-    idCardMosaic: idCardMosaicFun
+    idCardMosaic: idCardMosaicFun,
+    judgeValueType: judgeValueTypeFun
 }
 
 

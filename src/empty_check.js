@@ -1,3 +1,5 @@
+import {judgeValueTypeFun } from "./judge_value_type"
+
 export class Check {
     constructor () {
         this.next = true
@@ -10,20 +12,22 @@ export class Check {
             if (unInclude.includes(i) ) continue;
             // 开始校验
             let value = obj[i];
+
+            let type = judgeValueTypeFun( value );
             switch (true) {
                 case value == undefined || value == null:
                     this.next = false
                     break
-                case typeof value == 'number':
+                case type == 'number':
                     this.next = this.checkNumber(value);
                     break;
-                case typeof value == 'string':
+                case type == 'string':
                     this.next = this.checkString(value);
                     break;
-                case value.constructor ==  Object:
+                case type ==  Object:
                     this.next = this.checkObject( value,unInclude);
                     break;
-                case value.constructor==  Array:
+                case type ==  Array:
                     this.checkArray( value,unInclude )
                     break;
             }

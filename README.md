@@ -309,6 +309,22 @@ import { h5Api } from "h5-api";
     console.log( result );
 ```
 
+### 16. judgeValueType ( value )
+
+<strong>介绍: </strong> 判断某个值的类型
+
+<strong>参数:</strong> 
+ - value 值 任意类型
+
+<strong>返回值:</strong> 类型
+
+<strong>例子:</strong>
+
+```
+    let result = judgeValueType ( [1,2,3,4] );
+    console.log( result );
+```
+
 
 
 
