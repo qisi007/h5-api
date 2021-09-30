@@ -289,13 +289,13 @@ import { h5Api } from "h5-api";
 <strong>例子:</strong>
 
 ```
-    let result = telMosaic ( 17698443243 );
+    let result = telMosaic ( 17600000000 );
     console.log( result );
 ```
 
 ### 15. idCardMosaic ( idCard )
 
-<strong>介绍: </strong>手机号打码
+<strong>介绍: </strong>身份证号打码
 
 <strong>参数:</strong> 
  - idCard 身份证号码 number|字符串类型
@@ -332,9 +332,13 @@ import { h5Api } from "h5-api";
 <br/>
 <br/>
 
+
+
 ## 开源协议
 
 [MIT License](https://github.com/qisi007/h5-api/blob/main/LICENSE)
+
+> 开个不易，给个star吧
 
 <br/>
 
@@ -342,6 +346,6 @@ import { h5Api } from "h5-api";
 
 [地址](https://github.com/qisi007/h5-api)
 
-## 博客地址
+## 个人博客地址
 
-[博客](https://www.liuguisheng.vip)
+[传送](https://www.liuguisheng.vip)
