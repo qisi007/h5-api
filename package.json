@@ -1,12 +1,12 @@
 {
   "name": "h5-api",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "h5工具类集合",
   "keywords": [
-    "api", 
-    "h5", 
-    "h5-api", 
-    "javaScript", 
+    "api",
+    "h5",
+    "h5-api",
+    "javaScript",
     "utils"
   ],
   "main": "index.js",
