@@ -19,7 +19,7 @@ export const deepCopyFun = ( value ) => {
     if ( value.constructor == Object ) {
         let obj = {};
         for ( let key in value ) {
-            obj[key] = deepCopyFun(obj[key]);
+            obj[key] = deepCopyFun(value[key]);
         }
         return obj;
     }
